@@ -101,8 +101,6 @@ function getApiByZip(location) {
 //4. Retrieve and display reverse geocode for map and marker
 function getApiByGeocode(location) {
 
-  // https://developer.myptv.com/Documentation/Geocoding%20API/QuickStart.htm
-
   var requestUrl = `https://api.myptv.com/geocoding/v1/locations/by-text?searchText=${location}&apiKey=${geocodeKey}`
   fetch(requestUrl)
     .then(function (response) {
