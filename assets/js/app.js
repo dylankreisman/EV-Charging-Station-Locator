@@ -113,7 +113,7 @@ function getApiByGeocode(location) {
       console.log(data);
 
       // TODO: Run functions
-      latLon(data.locations[1].referencePosition.latitude, data.locations[1].referencePosition.longitude)
+      latLon(data.locations[0].referencePosition.latitude, data.locations[0].referencePosition.longitude)
     });
 }
 
