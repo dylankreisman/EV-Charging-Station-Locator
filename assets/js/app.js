@@ -26,8 +26,6 @@ searchBtn.addEventListener('click', (e) => {
 //1. Retrieve and display station location and retailer information from search bar
 function getApi(location) {
 
-  //https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest/
-
   var requestUrl = `https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?location=${location}&fuel_type_code='ELEC'&radius=5.0&api_key=${apikey}`
 
   fetch(requestUrl)
@@ -57,8 +55,6 @@ function getApi(location) {
 
 //2. Retrieve and display station location and retailer information with card buttons
 function getApiByID(location) {
-  //https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/get/
-
   var requestUrl = ` https://developer.nrel.gov/api/alt-fuel-stations/v1/${location}.json?api_key=${apikey}`
 
   fetch(requestUrl)
@@ -79,8 +75,6 @@ function getApiByID(location) {
 
 //3. Retrieve and display station location and retailer information with saved search buttons
 function getApiByZip(location) {
-
-  //https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest/
 
   var requestUrl = `https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?location=${location}&fuel_type_code='ELEC'&radius=5.0&api_key=${apikey}`
 
